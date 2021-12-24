@@ -110,6 +110,10 @@
 \begin{document}
 \maketitle
 
+\begin{abstract}
+    An abstract for the project template. This document demonstrates a workflow for reproducible analyses using R, gitHub, and Overleaf. 
+\end{abstract}
+
 \hypertarget{r-tables}{%
 \subsection{Including Tables from R}\label{r-tables}}
 
@@ -127,13 +131,13 @@ The table here was generated in the file \texttt{analysis.R}. The table is inclu
 \hypertarget{including-plots}{%
 \subsection{Including Plots from R}\label{including-plots}}
 
-The following figures were generated fromt he file \texttt{analysis.R}
+The following figures were generated the file \texttt{analysis.R}. Figure \ref{fig:figure-1} shows a plot of the monthly material usage data
 
 \begin{figure}
     \centering
-    % This is where you include the figure from R
+    % The \includegraphics{} function is where you include the figure from R
     \includegraphics[width=0.5\linewidth]{figures/producs-vs-time.png}
-    \caption{The figure of the data from R}
+    \caption{The figure of the data from R file \texttt{analysis.R}}
     \label{fig:figure-1}
 \end{figure}
 
@@ -142,15 +146,13 @@ The second figure that shows a forecast using an ARIMA model is shown in \ref{fi
 
 \begin{figure}
     \centering
-    % This is where you include the figure from R
-    \includegraphics[width=0.5\linewidth]{figures/producs-vs-time.png}
-    \caption{The figure of the data from R}
-    \label{fig:figure-1}
+    % The \includegraphics{} function is where you include the figure from R
+    \includegraphics[width=0.5\linewidth]{figures/forecasted-products-vs-time.png}
+    \caption{The data forecast figure from R file \texttt{analysis.R}}
+    \label{fig:figure-2}
 \end{figure}
 
 
 
-Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
-chunk to prevent printing of the R code that generated the plot.
 
 \end{document}
