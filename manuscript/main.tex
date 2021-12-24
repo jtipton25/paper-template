@@ -107,12 +107,27 @@
 \author{John}
 \date{12/24/2021}
 
+
+
+% bibliography options
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear, open={(},close={)}}
+
+
 \begin{document}
 \maketitle
 
 \begin{abstract}
     An abstract for the project template. This document demonstrates a workflow for reproducible analyses using R, gitHub, and Overleaf. 
 \end{abstract}
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+
+Here is a parenthetical citation using natbib \citep{newton1934principia} and here is a citation of an in text citation where \citet{einstein} said somthing profound. Notice that all the references, including this one here \citep{latexcompanion}, are at the end of the document.
+
 
 \hypertarget{r-tables}{%
 \subsection{Including Tables from R}\label{r-tables}}
@@ -153,6 +168,7 @@ The second figure that shows a forecast using an ARIMA model is shown in \ref{fi
 \end{figure}
 
 
+\bibliography{sample}
 
 
 \end{document}
