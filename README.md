@@ -12,8 +12,8 @@ While this is a gross oversimplification, managing these steps are important for
 This repository has the following file structure. This can be modified for your own needs, but this is a good starting point.
 
     .
-    ├── data                    # A folder that contains the raw data (depending on the project, this may or may not be pushed to gitHub)
     ├── R                       # R scripts and functions
+    ├── data                    # A folder that contains the raw data (depending on the project, this may or may not be pushed to gitHub)
     ├── figures                 # Figures from the analysis
     ├── results                 # Results and intermediate files for the analysis (typically these will NOT be pushed to gitHub)
     ├── manuscript              # Files for the creation of the Overleaf manuscript
