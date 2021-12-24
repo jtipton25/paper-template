@@ -51,8 +51,18 @@ While the workflow described in this template is useful, it is also basic and no
 
 # The writing workflow using Overleaf
 
-The end result of the workflow is an academic paper that is generated using a reproducible workflow. Given the `R` workflow described in the previous section, the output from these analyses can be easily included into the final latex document. The files for the latex document are in the `mansucript/` folder. 
+The end result of the workflow is an academic paper that is generated using a reproducible workflow. Overleaf is an excellent option for authoring technical latex documents, especially when these documents are authored collaboratively. Overleaf allows for editing side by side with the rendered pdf document and enables collaborative features like tracking changes and collaborative comments.
+
+Given the `R` workflow described in the previous section, the output from these analyses can be easily included into the final latex document. The files for the latex document are in the `mansucript/` folder. 
 
 
 The Overleaf project can be [viewed here](https://www.overleaf.com/read/cqpdrnpvqktj)
+
+
+
+
+# Managing gitHub using the workflow
+
+The key consideration with this workflow is to enable both a reproducible workflow and
+
 
