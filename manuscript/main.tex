@@ -110,39 +110,45 @@
 \begin{document}
 \maketitle
 
-\hypertarget{r-markdown}{%
-\subsection{R Markdown}\label{r-markdown}}
+\hypertarget{r-tables}{%
+\subsection{Including Tables from R}\label{r-tables}}
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see \url{http://rmarkdown.rstudio.com}.
+The table here was generated in the file \texttt{analysis.R}. The table is included using the following latex format
 
-When you click the \textbf{Knit} button a document will be generated
-that includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+\begin{table}[h]
+    \centering
+    % The \input{} command inputs the latex formatted table
+    \input{results/total_amounts}    
+    \caption{Table generate from file \texttt{analysis.R}}
+    \label{tab:my_label}
+\end{table}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{summary}\NormalTok{(cars)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-\end{verbatim}
 
 \hypertarget{including-plots}{%
-\subsection{Including Plots}\label{including-plots}}
+\subsection{Including Plots from R}\label{including-plots}}
 
-You can also embed plots, for example:
+The following figures were generated fromt he file \texttt{analysis.R}
 
-\includegraphics{figures/producs-vs-time.png}
+\begin{figure}
+    \centering
+    % This is where you include the figure from R
+    \includegraphics[width=0.5\linewidth]{figures/producs-vs-time.png}
+    \caption{The figure of the data from R}
+    \label{fig:figure-1}
+\end{figure}
+
+The second figure that shows a forecast using an ARIMA model is shown in \ref{fig:figure-2}
+
+
+\begin{figure}
+    \centering
+    % This is where you include the figure from R
+    \includegraphics[width=0.5\linewidth]{figures/producs-vs-time.png}
+    \caption{The figure of the data from R}
+    \label{fig:figure-1}
+\end{figure}
+
+
 
 Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
 chunk to prevent printing of the R code that generated the plot.
