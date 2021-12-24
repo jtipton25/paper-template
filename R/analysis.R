@@ -74,8 +74,11 @@ p2 <- p1 +
   geom_ribbon(data = dat_pred, aes(x = date, ymin = lower_95, ymax = upper_95), 
               fill = "red", alpha = 0.4)
   
+p2
 
-
+# save the figure to the figures folder
+ggsave(filename = here::here("figures", "forecasted-products-vs-time.png"),
+       plot = p2, width = 16, height = 9, units = "in")
 
 
 
