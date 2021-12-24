@@ -41,7 +41,7 @@ In any analysis, it is **critical** that one does not modify the original data. 
 
 ## Performing the analyses
 
-The statistical analyses are at the heart of the paper. As such, there can be one or more files in the analysis workflow. For this example, there is only a single analysis file. In the file `02-analysis.R`, there are examples of generating figures and latex tables that can then be included in the main latex paper. 
+The statistical analyses are at the heart of the paper. As such, there can be one or more files in the analysis workflow. For this example, there is only a single analysis file. In the file `02-analysis.R`, there are examples of generating figures and latex tables that can then be included in the main latex paper. For example, in `02-analysis.R` there is an example labex table using the `kable()` function and there are two figures generated using the `ggplot2` library. 
 
 
 ## Other workflows
@@ -50,6 +50,8 @@ While the workflow described in this template is useful, it is also basic and no
 
 
 # The writing workflow using Overleaf
+
+The end result of the workflow is an academic paper that is generated using a reproducible workflow. Given the `R` workflow described in the previous section, the output from these analyses can be easily included into the final latex document. The files for the latex document are in the `mansucript/` folder. 
 
 
 The Overleaf project can be [viewed here](https://www.overleaf.com/read/cqpdrnpvqktj)
