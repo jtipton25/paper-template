@@ -48,21 +48,22 @@ The statistical analyses are at the heart of the paper. As such, there can be on
 
 While the workflow described in this template is useful, it is also basic and not very sophisticated. For a more sophisticated workflow, the [`drake` package](https://books.ropensci.org/drake/) is recommended.
 
+In addition, to further a reproducbile workflow, the use of the [`renv` package](https://rstudio.github.io/renv/articles/renv.html) is recommended to simplify package management. 
+
 
 # The writing workflow using Overleaf
 
 The end result of the workflow is an academic paper that is generated using a reproducible workflow. Overleaf is an excellent option for authoring technical latex documents, especially when these documents are authored collaboratively. Overleaf allows for editing side by side with the rendered pdf document and enables collaborative features like tracking changes and collaborative comments.
 
-Given the `R` workflow described in the previous section, the output from these analyses can be easily included into the final latex document. The files for the latex document are in the `mansucript/` folder. 
+Given the `R` workflow described in the previous section, the output from these analyses can be easily included into the final latex document. The files for the latex document are in the `mansucript/` folder. The example latex template demonstrates how to include a latex table generated from `R` as well as the inclusion of multiple figures generated from `R`. 
 
 
 The Overleaf project can be [viewed here](https://www.overleaf.com/read/cqpdrnpvqktj)
 
 
 
-
 # Managing gitHub using the workflow
 
-The key consideration with this workflow is to enable both a reproducible workflow and
+The key consideration with this workflow is to enable both a reproducible workflow. As there are multiple moving parts to this workflow (the code, the figures/tables/code output, and the latex document), it is important to understand how each of these different components interact with gitHub. To reduce the chance of git merge conflicts, it is recommended to only edit the latex on Overleaf and keep regular push/pull cycles from gitHub to the computing resource on which the R analyses are performed.
 
 
